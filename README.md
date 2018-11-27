@@ -1,2 +1,2 @@
 # thinknotes
-content of thiknots.cn
+content of thinknotes.cn
