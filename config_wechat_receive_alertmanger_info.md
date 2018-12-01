@@ -1,5 +1,7 @@
+---
 title: 通过企业微信接收alertmanager信息
 date: 2018-06-09
+---
 
 PC端浏览器访问 https://work.weixin.qq.com/login 使用手机微信扫描进入企业微信管理界面，需要是企业微信管理员，依次进入：菜单栏>企业应用>创建应用，完成创建应用的操作，获取agent_id；在菜单栏>我的企业，获取corp_id
 
