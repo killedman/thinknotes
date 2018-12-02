@@ -71,4 +71,4 @@ category: 生活杂记
 
 ## 测试图床
 
-[测试图片](https://thinknotes-1256255945.cos.ap-chengdu.myqcloud.com/2018-10-02_103447.jpg)
+![测试图片](https://thinknotes-1256255945.cos.ap-chengdu.myqcloud.com/2018-10-02_103447.jpg)
