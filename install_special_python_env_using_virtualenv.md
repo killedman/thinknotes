@@ -32,7 +32,7 @@ pip list 查看是否安装virtualenv，如果没有安装执行pip install virt
 ## 激活venv环境
 
 在测试目录E:\python_projects\pachong_test下执行venv\Scripts\activate激活venv环境，使用pip list查看当前安装的包都有哪些，
-可以看到没有系统环境的包，非常干净，python版本也是2.7.15
+可以看到没有系统环境的包，非常干净，python版本也是2.7.15,使用deactive命令退出venv环境
 
 具体过程如下图：
 
