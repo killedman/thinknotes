@@ -6,25 +6,28 @@ date: 2018-05-06
 1. 每年阅读至少12本书
     1. 《时间管理：如何充分利用你的24小时》 Done 5月
 	2. 《每天最重要的2小时》 Done 5月
-	2. 《三体》 Done 5月
-	3. 《一个叫欧文的男人决定去死》 Done 5月
-	4. 《动物农场》 Done 5月
-	5. 《mactalk人生元编程》 Done 5月
-	6. 《寻路中国》 Done 5月
-	7. 《读者》梁文道 Done 6月
-	8. 《俗世奇人》 冯骥才 Done 8月
-	9. 《傻瓜式投资》 Done 8月
-	10. 《漫步华尔街-股市历久弥新的成功投资策略》 Doing
-2. 阅读一本英文原版书《Data Structures and Algorithms Using Python》
+	3. 《三体》 Done 5月
+	4. 《一个叫欧文的男人决定去死》 Done 5月
+	5. 《动物农场》 Done 5月
+	6. 《mactalk人生元编程》 Done 5月
+	7. 《寻路中国》 Done 5月
+	8. 《读者》梁文道 Done 6月
+	9. 《俗世奇人》 冯骥才 Done 8月
+	10. 《傻瓜式投资》 Done 8月
+	11. 《漫步华尔街-股市历久弥新的成功投资策略》 Done
+	12. 《刻意练习》Done 11月
+	13. 《放学后》东野圭吾 Done 12月
+	14. 《岛上书店》 Done 12月
+2. 阅读一本英文原版书《Data Structures and Algorithms Using Python》 **放弃**
 3. 持续提高编程能力
 	1. blog项目：
 	    * 使用nginx访问blog系统，而不是执行python程序后在后台运行（已完成）
 		    1. 配置nginx配置文件完成http://127.0.0.1:5000的代理
 			2. 修改flask路由/posts为/实现nginx代理 http://127.0.0.1:5000，浏览器输入公网ip直接显示目录posts下的文件，而不需要输入/posts
 		* 使用https访问blog系统（已完成）
-		* 解决blog系统无法build到MD静态页面问题（待完成）
+		* 解决blog系统无法build到MD静态页面问题（放弃）
 		* https://github.com/killedman/static_blog
-	2. （work）修改之前的python脚本，使用paramiko库实现检查VM账号密码是否正确及距离修改密码还有多长时间(待完成）
+	2. （work）修改之前的python脚本，使用paramiko库实现检查VM账号密码是否正确及距离修改密码还有多长时间(半成品）
 4. 每周写一篇高质量博客
     1. 来源一：读书笔记
 5. 战胜神经性皮炎
