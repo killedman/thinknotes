@@ -20,10 +20,25 @@ pip list 查看是否安装virtualenv，如果没有安装执行pip install virt
 
 这里创建的测试目录是E:\python_projects\pachong_test
 
-创建环境的命令：cd E:\python_projects\pachong_test;virtualenv --python=C:\Python27\python.exe --no-site-packages  venv
+创建环境的命令,参数是两个横杠开头：
 
-命令解释： --no-site-packages 添加该参数将不会安装全局的包到virtual环境中；
---python=C:\Python27\python.exe 指定python版本的绝对路径
+<pre>
+cd E:\python_projects\pachong_test;virtualenv --python=C:\Python27\python.exe --no-site-packages  venv
+</pre>
+
+命令解释： 
+
+<pre>
+--no-site-packages
+</pre>
+
+添加该参数将不会安装全局的包到virtual环境中；
+
+<pre>
+--python=C:\Python27\python.exe
+</pre>
+
+指定python版本的绝对路径
 
 安装截图如下：
 
