@@ -10,11 +10,10 @@ date: 2018-05-12
 
 所以，你还要设置上自动化的更新脚本，最容易的莫过于使用 crontab 了。使用 crontab -e 命令加入如下的定时作业（每个月都强制更新一下）：
 
-
+<pre>
 0 0 1 * * /usr/bin/certbot renew --force-renewal
-
 5 0 1 * * /usr/sbin/service nginx restart
-
+</pre>
 
 ## 自签名证书
 > Note: A self-signed certificate will encrypt communication between your server and any clients. However, because it is not signed by any of the trusted certificate authorities included with web browsers, users cannot use the certificate to validate the identity of your server automatically.
