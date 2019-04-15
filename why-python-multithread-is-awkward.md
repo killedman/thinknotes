@@ -1,7 +1,9 @@
+---
 title: 为什么说python的多线程是鸡肋
 date: 2019-04-15
 tag: [python, 多线程]
 category: 技术笔记
+---
 
 # 为什么说python的多线程是鸡肋
 
