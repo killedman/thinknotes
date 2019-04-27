@@ -1,4 +1,10 @@
-# 安装双系统windows+linux(ubuntu)
+---
+title: 安装双系统windows+linux(ubuntu)
+date: 2019-04-27
+tag: [2019年, Ubuntu, win10]
+category: 技术笔记
+---
+
 
 
 
