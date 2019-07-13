@@ -41,12 +41,13 @@ From [Linux 账号管理与 ACL 权限配置](http://cn.linux.vbird.org/linux_ba
 
 1. 执行命令ssh-keygen -t rsa -b 4096，根据需要可以输入密码，在~/.ssh目录下生成公钥私钥id_rsa.pub和id_rsa
 2. copy公钥id_rsa.pub到连接这台服务器的其他服务器上
-3. 添加公钥到.ssh/authorized_keys中，cp ~/.ssh/id_rsa.pub ~/.ssh/authorized_keys
-4. 设置权限
+3. 注意： copy私钥id_rsa到本地,以后在本地连接这台服务器可以执行这样的命令, ssh -i id_rsa account_name@server_ip -p port（中间找不到密钥，重新生成了一次，搞混了公钥和私钥，导致死活连不上服务器）
+4. 添加公钥到.ssh/authorized_keys中，cp ~/.ssh/id_rsa.pub ~/.ssh/authorized_keys
+5. 设置权限
     * chmod 0700 ~/.ssh/
     * chmod 0600 ~/.ssh/authorized_keys
-5. 保险起见，删除公钥 rm id_rsa.pub
-6. 接着修改ssh配置文件，开启如下内容
+6. 保险起见，删除公钥 rm id_rsa.pub
+7. 接着修改ssh配置文件，开启如下内容
     * RSAAuthentication yes
 	* PubkeyAuthentication yes
 	* AuthorizedKeysFile      .ssh/authorized_keys
@@ -55,11 +56,11 @@ From [Linux 账号管理与 ACL 权限配置](http://cn.linux.vbird.org/linux_ba
 	* 禁止空密码 PermitEmptyPasswords no
 	* 添加允许登录的用户名（在最后加上） AllowUsers abc
 	* 重启sshd服务,sudo service sshd restart
-3. 在ssh工具，比如xshell，配置证书登录
+8. 在ssh工具，比如xshell，配置证书登录
     1. 新建连接
 	2. 点击Authentication, --Method选择Public Key，点击Browse
 	3. 点击导入私钥，需要输入之前生成秘钥时设置的密码；如果出现导入秘钥错误，尝试导入公钥时会出现此问题
-4. 以后登录只能使用证书登录，密码无法登录
+9. 以后登录只能使用证书登录，密码无法登录
 
 ### 公钥登录原理
 所谓"公钥登录"，原理很简单，就是用户将自己的公钥储存在远程主机上。登录的时候，远程主机会向用户发送一段随机字符串，用户用自己的私钥加密后，再发回来。远程主机用事先储存的公钥进行解密，如果成功，就证明用户是可信的，直接允许登录shell，不再要求密码。
