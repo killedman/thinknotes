@@ -1,4 +1,10 @@
-# install dokuwiki + nginx in CentOS7
+---
+title: install dokuwiki + nginx in CentOS7 
+date: 2019-09-01
+tag: [2019年, dokuwiki, 知识库]
+category: 技术笔记
+---
+
 
 ## 查看已经安装好的Dokuwiki
 
